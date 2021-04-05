@@ -1,0 +1,31 @@
+mutation{
+  createProduct(productInput:{
+            producttype:"Notebook",
+            brand:"Classmate",
+            color:"red",
+            size:"small"
+            description:"this is a notebook",
+            availability:true,
+            price:20,
+            
+            quantity:12,
+    
+  }){
+    brand
+    
+  }
+}
+
+query{
+  productall{
+            producttype
+            brand
+            color
+            size
+            description
+            availability
+            price
+            quantity
+    
+  }
+}
